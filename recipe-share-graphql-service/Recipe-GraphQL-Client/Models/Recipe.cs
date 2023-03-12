@@ -12,9 +12,10 @@ namespace Recipe_GraphQL_Client.Models
         public string Title { get; set; }
         public string Description { get; set; }
 
+        [UseSorting]
         public ICollection<Ingredient> Ingredients { get; set; }
 
-        public ICollection<string> Steps { get; set; }
+        public List<string> Steps { get; set; }
 
         [ForeignKey("AuthorId")]
         public Guid AuthorId { get; set; }

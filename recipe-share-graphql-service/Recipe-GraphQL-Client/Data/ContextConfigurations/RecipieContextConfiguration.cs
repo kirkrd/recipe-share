@@ -21,18 +21,13 @@ namespace Recipe_GraphQL_Client.Data.ContextConfigurations
                  Id = _ids[0],
                  Title = "Spaghetti Carbonara",
                  Description = "A common classic from Italy!",
-                 Ingredients = new List<Ingredient> { },
-                 Steps = new List<string> { "Cook the pasta according to instructions on packaging" },
-                 AuthorId = _ids[0],
-
+                 AuthorId = _ids[0]
              },
              new Recipe
              {
                  Id = _ids[1],
                  Title = "Panncakes",
                  Description = "A perfect treat in the morning!",
-                 Ingredients = new List<Ingredient> { },
-                 Steps = new List<string> { "Mix flour and eggs with a whisker" },
                  AuthorId = _ids[1]
              }
             );

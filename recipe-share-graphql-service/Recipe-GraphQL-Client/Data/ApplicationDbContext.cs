@@ -13,6 +13,7 @@ namespace Recipe_GraphQL_Client.Data
             var ids = new Guid[] {Guid.NewGuid(), Guid.NewGuid() };
 
             builder.ApplyConfiguration(new AuthorContextConfiguration(ids));
+            builder.Ignore<List<string>>();
             builder.ApplyConfiguration(new RecipieContextConfiguration(ids));
             builder.ApplyConfiguration(new IngredientContextConfguration(ids));
             
