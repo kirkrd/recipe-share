@@ -1,9 +1,6 @@
-import { NavLink } from "react-router-dom";
-import Login from "../auth/Login";
+import RecipeList from "../../components/RecipeList";
 
-type Props = {};
-
-const Start = (props: Props) => {
+const Start = () => {
   return (
     <div>
       <h1> Recipe Finder </h1>
@@ -11,9 +8,9 @@ const Start = (props: Props) => {
         Welcome to Recipe finder! Your go to place to find recipies on the world
         wide web!
       </div>
-
-      <div style={{marginTop: 10}}>
-        <Login />
+      <div style={{ marginTop: 10 }}>
+        <input />
+        <RecipeList />
       </div>
     </div>
   );
