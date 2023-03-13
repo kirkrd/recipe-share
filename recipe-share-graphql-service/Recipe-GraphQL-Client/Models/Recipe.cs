@@ -12,7 +12,8 @@ namespace Recipe_GraphQL_Client.Models
         public string Title { get; set; }
         public string Description { get; set; }
 
-        [UseSorting]
+        [UseSorting
+            ]
         public ICollection<Ingredient> Ingredients { get; set; }
 
         public List<string> Steps { get; set; }
